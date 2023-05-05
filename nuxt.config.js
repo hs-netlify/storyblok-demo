@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
   ssr: true,
-  target: 'static',
   css: ['@/assets/css/fonts.css'],
   nitro: {
     prerender: {
