@@ -12,6 +12,11 @@ export default defineNuxtConfig({
   ssr: true,
   target: 'static',
   css: ['@/assets/css/fonts.css'],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
   runtimeConfig: {
     public: {
       templateToken: process.env.STORYBLOK_TOKEN,
