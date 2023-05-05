@@ -13,3 +13,4 @@ localhost.pem
 
 # Local Netlify folder
 .netlify
+.env.local
