@@ -45,7 +45,7 @@ const story = ref(null)
 const storyblokApi = useStoryblokApi()
 
 const apiParams = {
-  version: 'draft',
+  version: 'public',
   language: language,
   fallback_lang: 'default',
   resolve_relations: resolveRelations,
