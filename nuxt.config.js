@@ -9,13 +9,8 @@ export default defineNuxtConfig({
     ],
     '@nuxtjs/tailwindcss',
   ],
+
   css: ['@/assets/css/fonts.css'],
-  ssr: true,
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
   runtimeConfig: {
     public: {
       templateToken: process.env.STORYBLOK_TOKEN,
