@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
   css: ['@/assets/css/fonts.css'],
+  nitro: {
+    preset: 'netlify-builder',
+  },
   // ssr: true,
   // nitro: {
   //   prerender: {
