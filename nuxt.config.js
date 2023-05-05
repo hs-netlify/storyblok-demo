@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   ],
 
   css: ['@/assets/css/fonts.css'],
-  ssr: true,
+  ssr: false,
   runtimeConfig: {
     public: {
       templateToken: process.env.STORYBLOK_TOKEN,
