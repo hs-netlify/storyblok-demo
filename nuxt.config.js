@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
   css: ['@/assets/css/fonts.css'],
+  ssr: true,
   nitro: {
     prerender: {
       crawlLinks: true,
