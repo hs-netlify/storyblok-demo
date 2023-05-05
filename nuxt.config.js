@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  routeRules: {
+    '/**/*': { static: true },
+  },
   modules: [
     [
       '@storyblok/nuxt',
@@ -9,7 +12,6 @@ export default defineNuxtConfig({
     ],
     '@nuxtjs/tailwindcss',
   ],
-  ssr: false,
   css: ['@/assets/css/fonts.css'],
   nitro: {
     prerender: {
