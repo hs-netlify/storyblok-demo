@@ -129,7 +129,7 @@ const button2 = {
           />
         </div>
         <fieldset>
-          <legend class="font-medium text-lg mb-3">Select a category</legend>
+          <legend class="font-medium text-2xl mb-3">Select a category</legend>
           <div class="flex flex-col space-y-3">
             <label
               v-for="category in categories"
