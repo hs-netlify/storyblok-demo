@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     ],
     '@nuxtjs/tailwindcss',
   ],
-  ssr: true,
+  ssr: false,
   css: ['@/assets/css/fonts.css'],
   runtimeConfig: {
     public: {
