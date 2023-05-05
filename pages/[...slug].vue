@@ -55,28 +55,28 @@ const apiParams = {
 
 const error404 = ref(false)
 
-// const { customParent } = useRuntimeConfig().public
+const { customParent } = useRuntimeConfig().public
 
-// try {
-//   try {
-//     if (slug === 'error-404') error404.value = true
-//     const { data } = await storyblokApi.get('cdn/stories/' + slug, apiParams)
-//     story.value = data.story
-//   } catch (error) {
-//     if (error.status === 404) error404.value = true
-//     const { data } = await storyblokApi.get('cdn/stories/error-404', apiParams)
-//     story.value = data.story
-//   }
+try {
+  try {
+    if (slug === 'error-404') error404.value = true
+    const { data } = await storyblokApi.get('cdn/stories/' + slug, apiParams)
+    story.value = data.story
+  } catch (error) {
+    if (error.status === 404) error404.value = true
+    const { data } = await storyblokApi.get('cdn/stories/error-404', apiParams)
+    story.value = data.story
+  }
 
-//   onMounted(() => {
-//     useStoryblokBridge(story.value.id, (evStory) => (story.value = evStory), {
-//       resolveRelations: resolveRelations,
-//       customParent,
-//     })
-//   })
-// } catch (error) {
-//   console.log(error)
-// }
+  onMounted(() => {
+    useStoryblokBridge(story.value.id, (evStory) => (story.value = evStory), {
+      resolveRelations: resolveRelations,
+      customParent,
+    })
+  })
+} catch (error) {
+  console.log(error)
+}
 </script>
 
 <template>
