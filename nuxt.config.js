@@ -10,15 +10,12 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
   ],
   css: ['@/assets/css/fonts.css'],
+  ssr: true,
   nitro: {
-    preset: 'netlify-builder',
+    prerender: {
+      crawlLinks: true,
+    },
   },
-  // ssr: true,
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //   },
-  // },
   runtimeConfig: {
     public: {
       templateToken: process.env.STORYBLOK_TOKEN,
