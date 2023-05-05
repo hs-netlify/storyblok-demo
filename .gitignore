@@ -10,3 +10,6 @@ localhost-key.pem
 localhost.pem
 .vercel
 .DS_Store
+
+# Local Netlify folder
+.netlify
